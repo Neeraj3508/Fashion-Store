@@ -54,14 +54,7 @@ h1 {
 a>span {
   color: red;
 }
-#copyright {
-  background-color: rgb(66, 64, 82);
-  color : rgba(255, 227, 217, 1.0);
-  padding: 10px;
-  text-align: center;
-  margin-top: 0px;
 
-}
 #footer {
   overflow: hidden;
   width: 100%;
@@ -107,7 +100,7 @@ a>span {
   background-color: rgb(66, 64, 82);
   padding: 20px;
   font-size:30px;
-  /* color: rgba(255, 227, 217, 1.0); */
+  height:250px
 }
 #branding h2 {
   margin-bottom: 0px;
@@ -122,10 +115,10 @@ a>span {
   border-top-right-radius: 50%;
   border-bottom-right-radius: 50%;
   padding: 20px;
+  height: 220px;
   margin-left: 0px;
   display: inline-block;
-  /* float: left;
-  overflow: hidden; */
+
 
 }
 #subscribe-letter {
@@ -133,10 +126,9 @@ a>span {
   color: rgb(66, 64, 82);
   width:65%;
   float: right;
-
   border-top-left-radius: 50%;
   border-bottom-left-radius: 50%;
-  height: 200px;
+  height: 250px;
   
 
 }
@@ -164,4 +156,13 @@ a>span {
 #subscribe-letter button:hover {
   background-color: green;
   color: white;
+}
+#copyright {
+  background-color: rgb(66, 64, 82);
+  color : rgba(255, 227, 217, 1.0);
+  padding-top: 40px;
+  padding-bottom: 20px;
+  text-align: center;
+  margin-top: 0px;
+
 }
