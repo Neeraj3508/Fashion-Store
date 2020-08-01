@@ -31,11 +31,16 @@ ul.nav-bar li:nth-child(1) {
   margin: 0px 10px;
   float: left;
 }
-h1 {
+
+.bootstrap-container {
+  width: 100%;
+}
+
+#experience-text {
   color: rgb(66, 64, 82);;
   text-align: center;
-  margin-top: 50px;
-  margin-bottom: 50px; 
+  margin-top: 100px;
+  margin-bottom: 100px; 
   font-size: 70px;
   
 }
@@ -103,8 +108,8 @@ a>span {
   font-size:30px;
   height:250px
 }
-#branding h2 {
-  margin-bottom: 0px;
+#inner-branding h2 {
+  margin-top: 45px;
 }
 #branding p {
   margin-top: 0px;
@@ -129,12 +134,13 @@ a>span {
   float: right;
   border-top-left-radius: 50%;
   border-bottom-left-radius: 50%;
-  height: 250px;
+  height: 223px;
   
 
 }
 #subscribe-letter h2 {
-  text-align: center;  
+  text-align: center;
+  margin-top: 40px;  
 
 }
 #subscribe-letter input {
