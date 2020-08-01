@@ -1,0 +1,39 @@
+h1 {
+  background-color: rgba(255, 227, 217, 1.0);
+  color: rgb(66, 64, 82);
+  padding: 30px;
+  margin-top: 0px;
+  text-align: center;
+  margin-bottom: 30px;;
+}
+#formDivision {
+  background-color : rgba(255, 227, 217, 1.0);
+  margin: auto;
+  width: 100%;
+  clear: both;
+  padding: 30px;
+  margin-top: 20px;
+}
+label {
+  display: block;
+  padding: 30px 0px;
+  font-size: 30px;
+  color: rgb(66, 64, 82);
+  
+  
+}
+input {
+  display: block;
+  width: 90%;
+  clear: both;
+  padding: 30px;
+  font-size: 100%;
+}
+textarea {
+  display: block;
+  width: 93%;
+  clear: both;
+  padding: 10px;
+  font-size: 100%;
+  height: 300px; 
+}
