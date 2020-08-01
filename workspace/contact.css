@@ -1,0 +1,95 @@
+ul.nav-bar {
+  /* display: block; */
+  background-color : rgba(255, 227, 217, 1.0);
+  overflow: hidden;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  margin-top: 0px;
+  z-index: 1;
+}
+.nav-bar li {
+  list-style: none;
+  display: block;
+  float: right;
+  padding: 10px;
+  margin-right: 10px;
+  /* color: green; */
+  margin-top: 10px;
+}
+ul.nav-bar li a {
+  text-decoration: none;
+  color: rgb(66, 64, 82);
+}
+ul.nav-bar li:nth-child(1) {
+  font-size: xx-large;
+  color: rgb(66, 64, 82);;
+  margin: 0px 10px;
+  float: left;
+}
+
+
+h1 { 
+  background-color: rgba(255, 227, 217, 1.0);
+  color: rgb(66, 64, 82);
+  padding: 30px;
+  position: absolute;
+  top: 30px;
+  left: 0px;
+  right: 0px;
+  text-align: center;
+  z-index: 0;
+
+
+}
+.image {
+  margin-top: 149px;
+}
+#formDivision {
+  background-color : rgba(255, 227, 217, 1.0);
+  /* margin: auto; */
+  width: 100%;
+  clear: both;
+  padding: 30px;
+  margin-top: 20px 0px;
+}
+label {
+  display: block;
+  padding: 30px 0px;
+  font-size: 30px;
+  color: rgb(66, 64, 82);
+  
+  
+}
+#submit {
+  border: none;
+  background-color : white;
+  color: rgb(66, 64, 82);
+  display: block;
+
+  width: 25%;
+  margin: auto;
+  padding: 20px;
+}
+#submit:hover {
+  background-color: green;
+  color: white;
+}
+.field {
+  display: block;
+  width: 90%;
+  clear: both;
+  padding: 30px;
+  font-size: 20px;
+  border:none;
+}
+textarea {
+  border: none;
+  display: block;
+  width: 93%;
+  clear: both;
+  padding: 10px;
+  font-size: 20px;
+  height: 300px; 
+}
