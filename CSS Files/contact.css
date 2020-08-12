@@ -28,8 +28,10 @@ input {
   clear: both;
   padding: 30px;
   font-size: 100%;
+  border:none;
 }
 textarea {
+  border: none;
   display: block;
   width: 93%;
   clear: both;

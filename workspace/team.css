@@ -1,3 +1,6 @@
+*{
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
 ul.nav-bar {
   /* display: block; */
   background-color : rgba(255, 227, 217, 1.0);
@@ -57,5 +60,11 @@ h2{
 }
 div.card:hover {
   width: 40%;
+  animation-duration: 1s;
+  animation-name:grow;
 
+}
+@keyframes grow {
+  from{width: 30%;}
+  to{width: 40%;}
 }

@@ -1,5 +1,6 @@
 body {
   height: 1000px;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 
 }
 ul.nav-bar {
@@ -11,6 +12,7 @@ ul.nav-bar {
   left: 0px;
   right: 0px;
   margin-top: 0px;
+  z-index: 1;
 }
 .nav-bar li {
   list-style: none;
@@ -34,10 +36,30 @@ ul.nav-bar li:nth-child(1) {
 
 .bootstrap-container {
   width: 100%;
+  z-index: 0;
+}
+
+#goUpButton {
+  position: fixed;
+  height:80px;
+  width: 80px;
+  right: 10px;
+  bottom: 10px;
+  z-index:99;
+}
+#goUpButton:hover {
+  width: 90px;
+  height: 90px;
+  animation-duration: 0.5s;
+  animation-name: grow;
+}
+@keyframes grow {
+  from{width: 80px;height: 80px;}
+  to{width: 90px;height: 90px;}
 }
 
 #experience-text {
-  color: rgb(66, 64, 82);;
+  color: rgb(66, 64, 82);
   text-align: center;
   margin-top: 100px;
   margin-bottom: 100px; 
@@ -50,6 +72,11 @@ ul.nav-bar li:nth-child(1) {
   color: rgb(66, 64, 82);
  
 }
+#covid:hover {
+  
+  font-weight: bold;
+}
+  
 #covid-section {
   margin-top: 60px;
   padding: 40px; 
@@ -65,7 +92,7 @@ a>span {
   overflow: hidden;
   width: 100%;
   background-color: rgb(66, 64, 82);
-  padding: 10px;
+  padding: 43px;
 
 }
 #containerFooterElement {
@@ -94,6 +121,8 @@ a>span {
 #social-container {
   background-color: rgb(66, 64, 82);
   margin-top: 0px;
+  padding-left: 50px;
+  padding-bottom:30px;
 }
 #social-container h2 {
   text-align: center;
@@ -102,14 +131,26 @@ a>span {
   margin-top: 0px;
   padding-top:20px ;
 }
+/* #social svg:hover {
+  height: 100px;
+  width: 100px;
+  animation-duration: 0.3s;
+  animation-name:growIcon;
+}
+@keyframes growIcon {
+  from{width: 96px;height: 96px;}
+  to{width: 100px;height: 100px;}
+} */
 #branding {
   background-color: rgb(66, 64, 82);
   padding: 20px;
   font-size:30px;
-  height:250px
+  height:250px;
+  /* padding-bottom: 30px */
 }
 #inner-branding h2 {
   margin-top: 45px;
+  /* padding-bottom:50px; */
 }
 #branding p {
   margin-top: 0px;
@@ -163,7 +204,33 @@ a>span {
 #subscribe-letter button:hover {
   background-color: green;
   color: white;
+  animation-name: changeColor;
+  animation-duration: 1s;
 }
+@keyframes changeColor {
+  from{background-color: white;}
+  to{background-color: green;}
+}
+#marginDivision{
+  height:50px;
+  background-color: rgb(66, 64, 82);
+}
+#mapAndVideoContainer {
+  
+  background-color:rgb(66, 64, 82) ;
+  /* padding: 30px; */
+}
+#map {
+  display: inline;
+  width: 50%;
+  background-color:rgb(66, 64, 82) ;
+}
+#video {
+  float:right;
+  width: 50%;
+  background-color:rgb(66, 64, 82) ;
+}
+
 #copyright {
   background-color: rgb(66, 64, 82);
   color : rgba(255, 227, 217, 1.0);

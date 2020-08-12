@@ -1,3 +1,7 @@
+*{
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif
+}
+
 ul.nav-bar {
   /* display: block; */
   background-color : rgba(255, 227, 217, 1.0);
@@ -75,6 +79,12 @@ label {
 #submit:hover {
   background-color: green;
   color: white;
+  animation-duration: 0.5s;
+  animation-name: changeColor;
+}
+@keyframes changeColor {
+  from{background-color: white;color: rgb(66, 64, 82);}
+  to{background-color: green;color: white;}
 }
 .field {
   display: block;
