@@ -33,6 +33,26 @@ ul.nav-bar li:nth-child(1) {
   float: left;
 }
 
+li:nth-child(1):hover {
+  transform: scale(1.1);
+  animation-name:centeredBig;
+  animation-duration: 0.5s;
+}
+@keyframes centeredBig {
+  from{transform:none;}
+  to{transform:scale(1.1);}
+}
+li:hover {
+  transform: scale(1.2);
+  font-weight: bold;
+  animation-name:centeredElements;
+  animation-duration: 0.5s;
+}
+@keyframes centeredElements {
+  from{transform:none;}
+  to{transform:scale(1.2);font-weight: bold;;}
+}
+
 
 h1 { 
   background-color: rgba(255, 227, 217, 1.0);
