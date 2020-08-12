@@ -34,7 +34,7 @@ ul.nav-bar li:nth-child(1) {
   float: left;
 }
 
-li:nth-child(1):hover {
+ul.nav-bar li:nth-child(1):hover {
   transform: scale(1.1);
   animation-name:centeredBig;
   animation-duration: 0.5s;
@@ -43,7 +43,7 @@ li:nth-child(1):hover {
   from{transform:none;}
   to{transform:scale(1.1);}
 }
-li:hover {
+ul.nav-bar li:hover {
   transform: scale(1.2);
   font-weight: bold;
   animation-name:centeredElements;
@@ -87,7 +87,7 @@ li:hover {
   
 }
 
-#experience-text ::selection {
+#experience-text::selection {
   background-color:rgb(66, 64, 82);
   color:rgba(255, 227, 217, 1.0);
 }
