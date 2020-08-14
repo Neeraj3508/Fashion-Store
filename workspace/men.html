@@ -5,11 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Men</title>
   <link rel="stylesheet" href="men.css">
+  <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
 </head>
 <body>
 
   <ul class="nav-bar">
-    <li><b><a href="index.html">Fashion</a></b></li>  
+    <li><b><a href="index.html">Fashion</a></b></li> 
+    <li><a href="cart.html"><ion-icon name="cart-outline"></ion-icon></a></li>  
     <li><a href="contact.html">Contact</a></li>
     <li><a href="team.html">Team</a></li>
     <li><a href="products.html">Products</a></li>
@@ -30,22 +32,35 @@
     </div>
     <div id="productGrid">
       <div class="gridItem">
-        <img src="kids-harem-pant.jpg">
+        <div class="image-card">
+          <img src="kids-harem-pant.jpg" onmouseover="document.getElementById('kids-harem-pant').style.display = 'block'" onmouseout="document.getElementById('kids-harem-pant').style.display = 'none'">
+          <a href="#" class="add-cart" id="kids-harem-pant" onmouseover="document.getElementById('kids-harem-pant').style.display = 'block'" onmouseout="document.getElementById('kids-harem-pant').style.display = 'none'">Add To Cart</a>
+        </div>  
         <p>Lower</p>
         <p>Rs.999</p>
+        
       </div>
       <div class="gridItem">
-        <img src="blue-t-shirt.jpg">
+        <div class="image-card">
+          <img src="blue-t-shirt.jpg" onmouseover="document.getElementById('blue-t').style.display = 'block'" onmouseout="document.getElementById('blue-t').style.display = 'none'">
+          <a href="#" class="add-cart" id="blue-t" onmouseover="document.getElementById('blue-t').style.display = 'block'" onmouseout="document.getElementById('blue-t').style.display = 'none'">Add To Cart</a>
+        </div> 
         <p>Blue</p>
         <p>Rs.499</p>
       </div>
       <div class="gridItem">
-        <img src="child-dress-shirt-back.jpg">
+        <div class="image-card">
+          <img src="child-dress-shirt-back.jpg" onmouseover="document.getElementById('child-dress-shirt-back').style.display = 'block'" onmouseout="document.getElementById('child-dress-shirt-back').style.display = 'none'">
+          <a href="#" class="add-cart" id="child-dress-shirt-back" onmouseover="document.getElementById('child-dress-shirt-back').style.display = 'block'" onmouseout="document.getElementById('child-dress-shirt-back').style.display = 'none'">Add To Cart</a>
+        </div> 
         <p>Navy Dotted</p>
         <p>Rs.599</p>
       </div>
       <div class="gridItem">
-        <img src="childs-raccoon-tee.jpg">
+        <div class="image-card">
+          <img src="child-dress-shirt-back.jpg" onmouseover="document.getElementById('child-dress-shirt-back').style.display = 'block'" onmouseout="document.getElementById('child-dress-shirt-back').style.display = 'none'">
+          <a href="#" class="add-cart" id="child-dress-shirt-back" onmouseover="document.getElementById('child-dress-shirt-back').style.display = 'block'" onmouseout="document.getElementById('child-dress-shirt-back').style.display = 'none'">Add To Cart</a>
+        </div> 
         <p>Raccoon T</p>
         <p>Rs.599</p>
       </div>
