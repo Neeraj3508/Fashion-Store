@@ -5,11 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Men</title>
   <link rel="stylesheet" href="men.css">
+  <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
 </head>
 <body>
 
   <ul class="nav-bar">
-    <li><b><a href="index.html">Fashion</a></b></li>  
+    <li><b><a href="index.html">Fashion</a></b></li> 
+    <li><a href="cart.html"><ion-icon name="cart-outline"></ion-icon></a></li>  
     <li><a href="contact.html">Contact</a></li>
     <li><a href="team.html">Team</a></li>
     <li><a href="products.html">Products</a></li>
@@ -30,62 +32,106 @@
     </div>
     <div id="productGrid">
       <div class="gridItem">
-        <img src="bride-models-wedding-fashion.jpg">
+        <div class="image-card">
+          <img src="bride-models-wedding-fashion.jpg" onmouseover="document.getElementById('bride-model').style.display = 'block'" onmouseout="document.getElementById('bride-model').style.display = 'none'">
+          <a href="#" class="add-cart" id="bride-model" onmouseover="document.getElementById('bride-model').style.display = 'block'" onmouseout="document.getElementById('bride-model').style.display = 'none'">Add To Cart</a>
+        </div> 
+        
         <p>Wedding</p>
         <p>Rs.29999</p>
       </div>
       <div class="gridItem">
-        <img src="confident-young-woman.jpg">
+        <div class="image-card">
+          <img src="confident-young-woman.jpg" onmouseover="document.getElementById('confident-young-women').style.display = 'block'" onmouseout="document.getElementById('confident-young-women').style.display = 'none'">
+          <a href="#" class="add-cart" id="confident-young-women" onmouseover="document.getElementById('confident-young-women').style.display = 'block'" onmouseout="document.getElementById('confident-young-women').style.display = 'none'">Add To Cart</a>
+        </div> 
+        
         <p>White</p>
         <p>Rs.499</p>
       </div>
       <div class="gridItem">
-        <img src="fashion-model-in-striped-pants.jpg">
+        <div class="image-card">
+          <img src="fashion-model-in-striped-pants.jpg" onmouseover="document.getElementById('fasion-model-striped-pants').style.display = 'block'" onmouseout="document.getElementById('fasion-model-striped-pants').style.display = 'none'">
+          <a href="#" class="add-cart" id="fasion-model-striped-pants" onmouseover="document.getElementById('fasion-model-striped-pants').style.display = 'block'" onmouseout="document.getElementById('fasion-model-striped-pants').style.display = 'none'">Add To Cart</a>
+        </div> 
+        
         <p>Blue</p>
         <p>Rs.599</p>
       </div>
       <div class="gridItem">
-        <img src="hands-on-hips-girls-fashion.jpg">
+        <div class="image-card">
+          <img src="hands-on-hips-girls-fashion.jpg" onmouseover="document.getElementById('pink-with-jacket').style.display = 'block'" onmouseout="document.getElementById('pink-with-jacket').style.display = 'none'">
+          <a href="#" class="add-cart" id="pink-with-jacket" onmouseover="document.getElementById('pink-with-jacket').style.display = 'block'" onmouseout="document.getElementById('pink-with-jacket').style.display = 'none'">Add To Cart</a>
+        </div> 
+        
         <p>Pink with Jacket</p>
         <p>Rs.5999</p>
       </div>
       <div class="gridItem">
-        <img src="model-poses-casually-on-ride.jpg">
+        <div class="image-card">
+          <img src="model-poses-casually-on-ride.jpg" onmouseover="document.getElementById('blue-pattern').style.display = 'block'" onmouseout="document.getElementById('blue-pattern').style.display = 'none'">
+          <a href="#" class="add-cart" id="blue-pattern" onmouseover="document.getElementById('blue-pattern').style.display = 'block'" onmouseout="document.getElementById('blue-pattern').style.display = 'none'">Add To Cart</a>
+        </div> 
+        
         <p>Blue Pattern</p>
         <p>Rs.799</p>
       </div>
       <div class="gridItem">
-        <img src="modern-business-woman-portrait.jpg">
+        <div class="image-card">
+          <img src="modern-business-woman-portrait.jpg" onmouseover="document.getElementById('stripes').style.display = 'block'" onmouseout="document.getElementById('stripes').style.display = 'none'">
+          <a href="#" class="add-cart" id="stripes" onmouseover="document.getElementById('stripes').style.display = 'block'" onmouseout="document.getElementById('stripes').style.display = 'none'">Add To Cart</a>
+        </div> 
+        
         <p>Stripes</p>
         <p>Rs.999</p>
       </div>
       <div class="gridItem">
-        <img src="person-sits-cross-legged-in-summer-fashion.jpg">
+        <div class="image-card">
+          <img src="person-sits-cross-legged-in-summer-fashion.jpg" onmouseover="document.getElementById('flowers').style.display = 'block'" onmouseout="document.getElementById('flowers').style.display = 'none'">
+          <a href="#" class="add-cart" id="flowers" onmouseover="document.getElementById('flowers').style.display = 'block'" onmouseout="document.getElementById('flowers').style.display = 'none'">Add To Cart</a>
+        </div> 
+        
         <p>Flowers</p>
         <p>Rs.899</p>
       </div>
       <div class="gridItem">
-        <img src="smiling-woman-poses.jpg">
+        <div class="image-card">
+          <img src="smiling-woman-poses.jpg" onmouseover="document.getElementById('plain-white').style.display = 'block'" onmouseout="document.getElementById('plain-white').style.display = 'none'">
+          <a href="#" class="add-cart" id="plain-white" onmouseover="document.getElementById('plain-white').style.display = 'block'" onmouseout="document.getElementById('plain-white').style.display = 'none'">Add To Cart</a>
+        </div> 
+        
         <p>Plain White</p>
         <p>Rs.499</p>
       </div>
       <div class="gridItem">
-        <img src="striped-blouse-fashion.jpg">
+        <div class="image-card">
+          <img src="striped-blouse-fashion.jpg" onmouseover="document.getElementById('leather').style.display = 'block'" onmouseout="document.getElementById('leather').style.display = 'none'">
+          <a href="#" class="add-cart" id="leather" onmouseover="document.getElementById('leather').style.display = 'block'" onmouseout="document.getElementById('leather').style.display = 'none'">Add To Cart</a>
+        </div> 
         <p>Leather</p>
         <p>Rs.4999</p>
       </div>
       <div class="gridItem">
-        <img src="urban-overall-fashion.jpg">
+        <div class="image-card">
+          <img src="urban-overall-fashion.jpg" onmouseover="document.getElementById('blue-jump-suit').style.display = 'block'" onmouseout="document.getElementById('blue-jump-suit').style.display = 'none'">
+          <a href="#" class="add-cart" id="blue-jump-suit" onmouseover="document.getElementById('blue-jump-suit').style.display = 'block'" onmouseout="document.getElementById('blue-jump-suit').style.display = 'none'">Add To Cart</a>
+        </div> 
         <p>Blue Jump Suit</p>
         <p>Rs.1299</p>
       </div>
       <div class="gridItem">
-        <img src="woman-in-summer-floral-fashion.jpg">
+        <div class="image-card">
+          <img src="woman-in-summer-floral-fashion.jpg" onmouseover="document.getElementById('black-pattern-gown').style.display = 'block'" onmouseout="document.getElementById('black-pattern-gown').style.display = 'none'">
+          <a href="#" class="add-cart" id="black-pattern-gown" onmouseover="document.getElementById('black-pattern-gown').style.display = 'block'" onmouseout="document.getElementById('black-pattern-gown').style.display = 'none'">Add To Cart</a>
+        </div> 
         <p>Black Pattern Gown</p>
         <p>Rs.3999</p>
       </div>
       <div class="gridItem">
-        <img src="hot-pink-fashion-model.jpg">
+        <div class="image-card">
+          <img src="hot-pink-fashion-model.jpg" onmouseover="document.getElementById('hot-pink').style.display = 'block'" onmouseout="document.getElementById('hot-pink').style.display = 'none'">
+          <a href="#" class="add-cart" id="hot-pink" onmouseover="document.getElementById('hot-pink').style.display = 'block'" onmouseout="document.getElementById('hot-pink').style.display = 'none'">Add To Cart</a>
+        </div> 
         <p>Hot Pink</p>
         <p>Rs.999</p>
       </div>
