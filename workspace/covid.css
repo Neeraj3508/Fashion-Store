@@ -33,7 +33,7 @@ ul.nav-bar li:nth-child(1) {
   float: left;
 }
 
-ul.nav-bar li:nth-child(1):hover {
+li:nth-child(1):hover {
   transform: scale(1.1);
   animation-name:centeredBig;
   animation-duration: 0.5s;
@@ -42,7 +42,7 @@ ul.nav-bar li:nth-child(1):hover {
   from{transform:none;}
   to{transform:scale(1.1);}
 }
-ul.nav-bar li:hover {
+li:hover {
   transform: scale(1.2);
   font-weight: bold;
   animation-name:centeredElements;
@@ -50,12 +50,9 @@ ul.nav-bar li:hover {
 }
 @keyframes centeredElements {
   from{transform:none;}
-  to{transform:scale(1.2);font-weight: bold;}
+  to{transform:scale(1.2);font-weight: bold;;}
 }
 
-ion-icon {
-  font-size: 25px;
-}
 svg {
   margin-top:200px;
 }
