@@ -1,20 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cart | Fashion Store</title>
-  <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
-  <link rel="stylesheet" href="cart.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+    <link rel="stylesheet" href="cart.css">
+    <title>Shopping Cart</title>
 </head>
 <body>
-  <ul class="nav-bar">
-    <li><b><a href="index.html">Fashion</a></b></li> 
-    <li><a href="cart.html"><ion-icon name="cart-outline"></ion-icon></a></li>  
-    <li><a href="contact.html">Contact</a></li>
-    <li><a href="team.html">Team</a></li>
-    <li><a href="products.html">Products</a></li>
-    <li><a href="index.html">Home</a></li>
-  </ul>
+    <ul class="nav-bar">
+        <li><b><a href="index.html">Fashion</a></b></li> 
+        <li><a href="cart.html" class="cart"><ion-icon name="cart-outline"></ion-icon><span>0</span></a></li>   
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="team.html">Team</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="index.html">Home</a></li>
+      </ul>
+
+    <div class="container-products">
+        <div class="product-header">
+            <h5 class="product-title">PRODUCT</h5>
+            <h5 class="price sm-hide">PRICE</h5>
+            <h5 class="quantity">QUANTITY</h5>
+            <h5 class="total">TOTAL</h5>
+        </div>
+        <div class="products">
+
+        </div>
+    </div>
+    <a href="pay.html" style="text-decoration: none;"><button>Buy Now</button></a>
+
+    <script src="main.js"></script>
+
 </body>
 </html>
