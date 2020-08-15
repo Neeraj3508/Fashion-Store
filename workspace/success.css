@@ -6,3 +6,61 @@ font-size: 70px;
 text-align: center;
 color: rgb(66, 64, 82);
 }
+
+svg {
+  margin-top: 100px;
+}
+ul.nav-bar {
+  /* display: block; */
+  background-color : rgba(255, 227, 217, 1.0);
+  overflow: hidden;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  margin-top: 0px;
+  z-index: 1;
+}
+.nav-bar li {
+  list-style: none;
+  display: block;
+  float: right;
+  padding: 10px;
+  margin-right: 10px;
+  /* color: green; */
+  margin-top: 10px;
+  font-size: 16px;
+}
+ul.nav-bar li a {
+  text-decoration: none;
+  color: rgb(66, 64, 82);
+}
+ul.nav-bar li:nth-child(1) {
+  font-size: xx-large;
+  color: rgb(66, 64, 82);;
+  margin: 0px 10px;
+  float: left;
+}
+
+ul.nav-bar li:nth-child(1):hover {
+  transform: scale(1.1);
+  animation-name:centeredBig;
+  animation-duration: 0.5s;
+}
+@keyframes centeredBig {
+  from{transform:none;}
+  to{transform:scale(1.1);}
+}
+ul.nav-bar li:hover {
+  transform: scale(1.2);
+  font-weight: bold;
+  animation-name:centeredElements;
+  animation-duration: 0.5s;
+}
+@keyframes centeredElements {
+  from{transform:none;}
+  to{transform:scale(1.2);font-weight: bold;;}
+}
+ion-icon {
+  font-size: 25px;
+}

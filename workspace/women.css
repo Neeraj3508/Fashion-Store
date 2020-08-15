@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: white;
   color: rgb(66, 64, 82);
@@ -72,7 +76,7 @@ ion-icon {
   from{transform: none;}
   to{transform: scale(1.1);}
 }
-.add-cart {
+.women-product-add-cart {
   display: none;
   text-decoration: none;
   position:absolute;

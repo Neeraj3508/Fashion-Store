@@ -1,76 +1,76 @@
-let carts = document.querySelectorAll('.add-cart');
+let carts = document.querySelectorAll('.women-product-add-cart');
 
 let products = [ 
     {
-        name: "Kids-Harem-Pant",
-        tag: "kids-harem-pant",
-        price: 999,
+        name: "bride-models-wedding-fashion",
+        tag: "bride-models-wedding-fashion",
+        price: 29999,
         inCart: 0
     },
     {
-        name: "Blue-T-Shirt",
-        tag: "blue-t-shirt",
+        name: "confident-young-woman",
+        tag: "confident-young-woman",
         price: 499,
         inCart: 0
     },
     {
-        name: "Child-Dress-Shirt-Back",
-        tag: "child-dress-shirt-back",
+        name: "fashion-model-in-striped-pants",
+        tag: "fashion-model-in-striped-pants",
         price: 599,
         inCart: 0
     },
     {
-        name: "Childs-Raccoon-Tee",
-        tag: "childs-raccoon-tee",
-        price: 599,
+        name: "hands-on-hips-girls-fashion",
+        tag: "hands-on-hips-girls-fashion",
+        price: 5999,
         inCart: 0
     },
     {
-        name: "cobalt-blue-t-shirt",
-        tag: "cobalt-blue-t-shirt",
-        price: 499,
+        name: "model-poses-casually-on-ride",
+        tag: "model-poses-casually-on-ride",
+        price: 799,
         inCart: 0
     },
     {
-        name: "green-t-shirt",
-        tag: "green-t-shirt",
-        price: 499,
-        inCart: 0
-    },
-    {
-        name: "kids-anchor-shirt",
-        tag: "kids-anchor-shirt",
-        price: 499,
-        inCart: 0
-    },
-    {
-        name: "kids-harem-pant",
-        tag: "kids-harem-pant",
+        name: "modern-business-woman-portrait",
+        tag: "modern-business-woman-portrait",
         price: 999,
         inCart: 0
     },
     {
-        name: "kids-t-shirt",
-        tag: "kids-t-shirt",
+        name: "person-sits-cross-legged-in-summer-fashion",
+        tag: "person-sits-cross-legged-in-summer-fashion",
+        price: 899,
+        inCart: 0
+    },
+    {
+        name: "smiling-woman-poses",
+        tag: "smiling-woman-poses",
         price: 499,
         inCart: 0
     },
     {
-        name: "kids-whale-shirt",
-        tag: "kids-whale-shirt",
-        price: 499,
+        name: "striped-blouse-fashion",
+        tag: "striped-blouse-fashion",
+        price: 4999,
         inCart: 0
     },
     {
-        name: "purple-t-shirt",
-        tag: "purple-t-shirt",
-        price: 499,
+        name: "urban-overall-fashion",
+        tag: "urban-overall-fashion",
+        price: 1299,
         inCart: 0
     },
     {
-        name: "red-t-shirt",
-        tag: "red-t-shirt",
-        price: 499,
+        name: "woman-in-summer-floral-fashion",
+        tag: "woman-in-summer-floral-fashion",
+        price: 3999,
+        inCart: 0
+    },
+    {
+        name: "hot-pink-fashion-model",
+        tag: "hot-pink-fashion-model",
+        price: 999,
         inCart: 0
     }
 ];

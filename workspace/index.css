@@ -1,3 +1,6 @@
+html {
+  scroll-behavior:smooth;
+}
 body {
   height: 1000px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -71,14 +74,13 @@ ion-icon {
   z-index:99;
 }
 #goUpButton:hover {
-  width: 90px;
-  height: 90px;
+  transform:scale(1.2);
   animation-duration: 0.5s;
   animation-name: grow;
 }
 @keyframes grow {
-  from{width: 80px;height: 80px;}
-  to{width: 90px;height: 90px;}
+  from{transform: none;}
+  to{transform: scale(1.2);}
 }
 
 #experience-text {
@@ -156,6 +158,15 @@ ion-icon {
   margin-left: 20px;
   text-decoration:none;
 }
+#social a svg:hover {
+  transform:scale(1.2);
+  animation-name:grow-icon;
+  animation-duration: 0.5s;
+}
+@keyframes grow-icon {
+  from{transform:none;}
+  to{transform:scale(1.2); }
+}
 #social-container {
   background-color: rgb(66, 64, 82);
   margin-top: 0px;
@@ -205,6 +216,13 @@ ion-icon {
   display: inline-block;
 
 
+}
+
+#subscribe-show {
+  text-align: center;
+  padding: 10px;
+  font-size: 20px;
+  color: rgb(66, 64, 82);
 }
 #subscribe-letter {
   background-color:rgba(255, 227, 217, 1.0);

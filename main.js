@@ -1,5 +1,5 @@
 let carts = document.querySelectorAll('.add-cart');
-
+console.log(carts.length)
 let products = [ 
     {
         name: "Kids-Harem-Pant",
@@ -23,54 +23,6 @@ let products = [
         name: "Childs-Raccoon-Tee",
         tag: "childs-raccoon-tee",
         price: 599,
-        inCart: 0
-    },
-    {
-        name: "cobalt-blue-t-shirt",
-        tag: "cobalt-blue-t-shirt",
-        price: 499,
-        inCart: 0
-    },
-    {
-        name: "green-t-shirt",
-        tag: "green-t-shirt",
-        price: 499,
-        inCart: 0
-    },
-    {
-        name: "kids-anchor-shirt",
-        tag: "kids-anchor-shirt",
-        price: 499,
-        inCart: 0
-    },
-    {
-        name: "kids-harem-pant",
-        tag: "kids-harem-pant",
-        price: 999,
-        inCart: 0
-    },
-    {
-        name: "kids-t-shirt",
-        tag: "kids-t-shirt",
-        price: 499,
-        inCart: 0
-    },
-    {
-        name: "kids-whale-shirt",
-        tag: "kids-whale-shirt",
-        price: 499,
-        inCart: 0
-    },
-    {
-        name: "purple-t-shirt",
-        tag: "purple-t-shirt",
-        price: 499,
-        inCart: 0
-    },
-    {
-        name: "red-t-shirt",
-        tag: "red-t-shirt",
-        price: 499,
         inCart: 0
     }
 ];

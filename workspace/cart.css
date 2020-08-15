@@ -1,6 +1,9 @@
 *{
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif
 }
+html {
+  scroll-behavior: smooth;
+}
 ul.nav-bar {
   /* display: block; */
   background-color : rgba(255, 227, 217, 1.0);
@@ -152,10 +155,7 @@ ion-icon {
 .basketTotal {
   width: 10%;
 }
-a {
-  text-decoration: none;
 
-}
 
 button {
   padding: 20px;

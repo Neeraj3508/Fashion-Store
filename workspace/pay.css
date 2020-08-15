@@ -1,0 +1,176 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  height: 1500px;;
+}
+
+
+ul.nav-bar {
+  /* display: block; */
+  background-color : rgba(255, 227, 217, 1.0);
+  overflow: hidden;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  margin-top: 0px;
+  z-index: 1;
+}
+.nav-bar li {
+  list-style: none;
+  display: block;
+  float: right;
+  padding: 10px;
+  margin-right: 10px;
+  /* color: green; */
+  margin-top: 10px;
+  font-size: 16px;
+}
+ul.nav-bar li a {
+  text-decoration: none;
+  color: rgb(66, 64, 82);
+}
+ul.nav-bar li:nth-child(1) {
+  font-size: xx-large;
+  color: rgb(66, 64, 82);;
+  margin: 0px 10px;
+  float: left;
+}
+
+ul.nav-bar li:nth-child(1):hover {
+  transform: scale(1.1);
+  animation-name:centeredBig;
+  animation-duration: 0.5s;
+}
+@keyframes centeredBig {
+  from{transform:none;}
+  to{transform:scale(1.1);}
+}
+ul.nav-bar li:hover {
+  transform: scale(1.2);
+  font-weight: bold;
+  animation-name:centeredElements;
+  animation-duration: 0.5s;
+}
+@keyframes centeredElements {
+  from{transform:none;}
+  to{transform:scale(1.2);font-weight: bold;;}
+}
+ion-icon {
+  font-size: 25px;
+}
+
+h1 {
+  text-align:center;
+  font-size: 100px;
+  margin: 50px auto;
+  color:rgb(66, 64, 82);
+  background-color: rgba(255, 227, 217, 1.0);
+  position: absolute;
+  left:0;
+  right: 0;
+
+}
+.svg img {
+  margin-top: 250px;
+}
+
+.details-container {
+  width: 50%;
+  margin:auto;
+  background-color: rgba(255, 227, 217, 1.0);
+  height: 580px;
+  margin-top:50px;
+  color:rgb(66, 64, 82);
+  font-family:sans-serif;
+  padding: 30px;
+  overflow: hidden;
+  box-shadow: 5px 5px 20px 5px rgb(66, 64, 82);
+  border-radius: 10px;;
+
+}
+.image-container {
+  width: 50%;
+
+  display: inline-flex;
+  height:150px;
+  float: left;
+ 
+}
+.heading-container {
+
+  display: inline-flex;
+  width: 50%;
+  height:150px;
+  float: left;
+  font-size: 35px;
+  text-align:center;
+ 
+}
+h3 {
+  width: 100%;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.image-container>img {
+  width: 100%;
+  margin-top: auto;
+  margin-bottom: auto;
+
+  display: block;
+ 
+}
+.field-label {
+  width: 50%;
+  display: inline-block;
+  margin-bottom: 10px;
+  margin-top:10px;
+  font-size:1.5em;
+}
+.fields {
+  border:none;
+  padding: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  width: 25%;
+  border-radius: 5px;
+  font-family: sans-serif;
+  font-size: 20px;
+  color:rgb(66, 64, 82);
+}
+.check {
+
+  height: 20px;
+  width: 20px;
+  /* margin-bottom: 10px; */
+  margin-top: 10px;
+  border-radius: 5px;
+}
+.checkbox-text {
+  display: inline-block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+#pay {
+  border:none;
+  font-size: 20px;
+  padding: 20px;
+  width: 25%;
+  display: block;
+  margin: 20px auto;
+  background-color: rgb(66, 64, 82);
+  color:rgba(255, 227, 217, 1.0);
+}
+#pay:hover {
+  background-color: green;
+  color:white;
+  animation-name: changeColor;
+  animation-duration: 0.5s;
+}
+@keyframes changeColor {
+  from{background-color: rgb(66, 64, 82);color: rgba(255, 227, 217, 1.0);
+  to{background-color:green;color:white;}}
+}
