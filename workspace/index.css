@@ -1,3 +1,6 @@
+html {
+  scroll-behavior:smooth;
+}
 body {
   height: 1000px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -22,6 +25,7 @@ ul.nav-bar {
   margin-right: 10px;
   /* color: green; */
   margin-top: 10px;
+  font-size: 16px;
 }
 ul.nav-bar li a {
   text-decoration: none;
@@ -58,7 +62,9 @@ ul.nav-bar li:hover {
   width: 100%;
   z-index: 0;
 }
-
+ion-icon {
+  font-size: 25px;
+}
 #goUpButton {
   position: fixed;
   height:80px;
@@ -68,14 +74,13 @@ ul.nav-bar li:hover {
   z-index:99;
 }
 #goUpButton:hover {
-  width: 90px;
-  height: 90px;
+  transform:scale(1.2);
   animation-duration: 0.5s;
   animation-name: grow;
 }
 @keyframes grow {
-  from{width: 80px;height: 80px;}
-  to{width: 90px;height: 90px;}
+  from{transform: none;}
+  to{transform: scale(1.2);}
 }
 
 #experience-text {
@@ -119,7 +124,7 @@ ul.nav-bar li:hover {
   background-color : rgba(255, 227, 217, 1.0);
   margin-bottom: 60px;
 }
-a>span {
+#covid19 {
   color: red;
 }
 
@@ -152,6 +157,15 @@ a>span {
 #social a {
   margin-left: 20px;
   text-decoration:none;
+}
+#social a svg:hover {
+  transform:scale(1.2);
+  animation-name:grow-icon;
+  animation-duration: 0.5s;
+}
+@keyframes grow-icon {
+  from{transform:none;}
+  to{transform:scale(1.2); }
 }
 #social-container {
   background-color: rgb(66, 64, 82);
@@ -202,6 +216,13 @@ a>span {
   display: inline-block;
 
 
+}
+
+#subscribe-show {
+  text-align: center;
+  padding: 10px;
+  font-size: 20px;
+  color: rgb(66, 64, 82);
 }
 #subscribe-letter {
   background-color:rgba(255, 227, 217, 1.0);

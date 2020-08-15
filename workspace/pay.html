@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout | Fashion Store</title>
+  <link rel="stylesheet" href="pay.css">
+  <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+</head>
+<body>
+
+  <ul class="nav-bar">
+    <li><b><a href="index.html">Fashion</a></b></li> 
+    <li><a href="cart.html" class="cart"><ion-icon name="cart-outline"></ion-icon><span>0</span></a></li> 
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="team.html">Team</a></li>
+    <li><a href="products.html">Products</a></li>
+    <li><a href="index.html">Home</a></li>   
+  </ul>
+
+  <h1>Checkout</h1>
+  <div class="svg">
+    <img src="undraw_pay_online_b1hk.svg" width="100%" height="500px">
+  </div>
+  <div class="details-container">
+    <div class="image-container">
+      <img src="mastercard.png" alt="visa-mastercard">
+    </div>
+    <div class="heading-container">
+      <h3>MasterCard/Visa</h3>
+    </div>
+    <div class="form">
+      <form action="">
+        <label class="field-label">Card Number</label>
+        <input type="text" maxlength="16" class="fields" required>
+        <br>
+        <label class="field-label">Expiry Date Month/Year</label>
+        <input type="month" class="fields" required>
+        <br>
+        <label class="field-label">Security Code</label>
+        <input type="text" maxlength="4" class="fields" required>
+        <br>
+        <label class="field-label">Name of account holder</label>
+        <input type="text" class="fields" required>
+        <br>
+        <input type="checkbox" class="check">
+        <label for="check" class="checkbox-text">I authorize recurring charges on my account</label>
+        <br>
+        <input type="checkbox" class="check">
+        <label for="check" class="checkbox-text">Register this account for next purchase</label>
+        <br>
+        <input type="button" value="Pay" id="pay">
+      </form>
+    </div>
+  </div>
+  <script src="main.js"></script>
+  <script src="women.js"></script>
+</body>
+</html>
