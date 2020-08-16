@@ -1,13 +1,15 @@
 html {
   scroll-behavior: smooth;
 }
-
 body {
-  height: 1500px;
   font-family: sans-serif;
 }
-
-
+h1 {
+  margin-top: 100px;
+  text-align:center;
+  color: rgb(66, 64, 82);
+  font-size:4em;
+}
 ul.nav-bar {
   /* display: block; */
   background-color : rgba(255, 227, 217, 1.0);
@@ -27,7 +29,6 @@ ul.nav-bar {
   margin-right: 10px;
   /* color: green; */
   margin-top: 10px;
-  font-size: 16px;
 }
 ul.nav-bar li a {
   text-decoration: none;
@@ -57,33 +58,21 @@ ul.nav-bar li:hover {
 }
 @keyframes centeredElements {
   from{transform:none;}
-  to{transform:scale(1.2);font-weight: bold;;}
+  to{transform:scale(1.2);font-weight: bold;}
 }
+
 ion-icon {
   font-size: 25px;
 }
 
-h1 {
-  text-align:center;
-  font-size: 100px;
-  margin: 50px auto;
-  color:rgb(66, 64, 82);
-  background-color: rgba(255, 227, 217, 1.0);
-  position: absolute;
-  left:0;
-  right: 0;
-
-}
-.svg img {
-  margin-top: 250px;
-}
-
 .details-container {
   width: 50%;
-  margin:auto;
+  margin-top: 50px;
+  margin-left:auto;
+  margin-right: auto;
   background-color: rgba(255, 227, 217, 1.0);
-  height: 580px;
-  margin-top:50px;
+  height: 570px;  
+
   color:rgb(66, 64, 82);
   font-family:sans-serif;
   padding: 30px;
@@ -92,37 +81,7 @@ h1 {
   border-radius: 10px;;
 
 }
-.image-container {
-  width: 50%;
 
-  display: inline-flex;
-  height:150px;
-  float: left;
- 
-}
-.heading-container {
-
-  display: inline-flex;
-  width: 50%;
-  height:150px;
-  float: left;
-  font-size: 35px;
-  text-align:center;
- 
-}
-h3 {
-  width: 100%;
-  margin-top: auto;
-  margin-bottom: auto;
-}
-.image-container>img {
-  width: 100%;
-  margin-top: auto;
-  margin-bottom: auto;
-
-  display: block;
- 
-}
 .field-label {
   width: 50%;
   display: inline-block;
@@ -141,21 +100,8 @@ h3 {
   font-size: 20px;
   color:rgb(66, 64, 82);
 }
-.check {
 
-  height: 20px;
-  width: 20px;
-  /* margin-bottom: 10px; */
-  margin-top: 10px;
-  border-radius: 5px;
-}
-.checkbox-text {
-  display: inline-block;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  font-size: 20px;
-}
-#pay {
+#proceed {
   border:none;
   font-size: 20px;
   padding: 20px;
@@ -165,7 +111,7 @@ h3 {
   background-color: rgb(66, 64, 82);
   color:rgba(255, 227, 217, 1.0);
 }
-#pay:hover {
+#proceed:hover {
   background-color: green;
   color:white;
   animation-name: changeColor;

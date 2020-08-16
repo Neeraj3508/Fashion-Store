@@ -1,6 +1,6 @@
-let carts = document.querySelectorAll('.women-product-add-cart');
+let cartsWomen = document.querySelectorAll('.women-product-add-cart');
 
-let products = [ 
+let productsWomen = [ 
     {
         name: "bride-models-wedding-fashion",
         tag: "bride-models-wedding-fashion",
@@ -75,10 +75,10 @@ let products = [
     }
 ];
 
-for(let i=0; i< carts.length; i++) {
-    carts[i].addEventListener('click', () => {
-        cartNumbers(products[i]);
-        totalCost(products[i]);
+for(let i=0; i< cartsWomen.length; i++) {
+    cartsWomen[i].addEventListener('click', () => {
+        cartNumbers(productsWomen[i]);
+        totalCost(productsWomen[i]);
     });
 }
 

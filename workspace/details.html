@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Details | Fashion Store</title>
+  <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+  <link rel="stylesheet" href="details.css">
+</head>
+<body>
+  <ul class="nav-bar">
+    <li><b><a href="index.html">Fashion</a></b></li> 
+    <li><a href="cart.html" class="cart"><ion-icon name="cart-outline"></ion-icon><span>0</span></a></li>   
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="team.html">Team</a></li>
+    <li><a href="products.html">Products</a></li>
+    <li><a href="index.html">Home</a></li>
+  </ul>
+
+  <h1>Add Some Personal Details</h1>
+  <div class="details-container" id="detailForm">
+    <form action="pay.html">
+      <label class="field-label">Name</label>
+      <input type="text" class="fields" id="fname" onchange="javascript:giveName()" required>
+      <br>
+      <label class="field-label">House Number/Flat Number</label>
+      <input type="text" maxlength="4" class="fields" id="houseNumber" onchange="javascript:giveAddress('houseNumber')" required>
+      <br>
+      <label class="field-label">City</label>
+      <input type="text" class="fields" id ="city" onchange="javascript:giveAddress('city')" required>
+      <br>
+      <label class="field-label">State</label>
+      <input type="text" class="fields" id="state" onchange="javascript:giveAddress('state')" required>
+      <br>
+      <label class="field-label">Pin Code</label>
+      <input type="text" maxlength="6"  id="pinCode" onchange="javascript:giveAddress('pinCode')" class="fields" required>
+      <br>
+      <label class="field-label">Mobile Number</label>
+      <input type="tel" class="fields" id="mainMobileNumber" onchange="javascript:getMobileNumber()" required>
+      <br>
+      <label class="field-label">Alternate Mobile Number(optional)</label>
+      <input type="tel" class="fields" optional>
+      <br>
+      <input type="submit" value="Proceed" id="proceed">
+    </form>
+  </div>
+  <script src="main.js"></script>
+  <script src="women.js"></script>
+  <script src="details.js"></script>
+</body>
+</html>

@@ -30,7 +30,7 @@
       <h3>MasterCard/Visa</h3>
     </div>
     <div class="form">
-      <form action="">
+      <form action="orderReceipt.html">
         <label class="field-label">Card Number</label>
         <input type="text" maxlength="16" class="fields" required>
         <br>
@@ -38,18 +38,18 @@
         <input type="month" class="fields" required>
         <br>
         <label class="field-label">Security Code</label>
-        <input type="text" maxlength="4" class="fields" required>
+        <input type="text" maxlength="3" class="fields" required>
         <br>
         <label class="field-label">Name of account holder</label>
         <input type="text" class="fields" required>
         <br>
-        <input type="checkbox" class="check">
+        <input type="checkbox" class="check" required>
         <label for="check" class="checkbox-text">I authorize recurring charges on my account</label>
         <br>
-        <input type="checkbox" class="check">
+        <input type="checkbox" class="check" required>
         <label for="check" class="checkbox-text">Register this account for next purchase</label>
         <br>
-        <input type="button" value="Pay" id="pay">
+        <input type="submit" value="Pay" id="pay">
       </form>
     </div>
   </div>
