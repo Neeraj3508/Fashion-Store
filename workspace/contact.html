@@ -27,13 +27,16 @@
   <div id="formDivision">
     <form action="success.html">
       <label>Full Name: </label>
-      <input type="text" placeholder="Ex: Neeraj Gupta" class="field" required>
+      <input type="text" placeholder="Ex: Neeraj Gupta" class="field" id="inputName" onchange="checkForFullName()" required>
+      <p id="outputName" class="validationOutputs"></p>
       <br>
       <label>Email: </label>
-      <input type="email" placeholder="Ex: abc@gmail.com" class="field"  required>
+      <input type="email" placeholder="Ex: abc@gmail.com" class="field" id="inputEmail" onchange="checkForEmail()"  required>
+      <p id="outputEmail" class="validationOutputs"></p>
       <br>
       <label>Mobile Number: </label>
-      <input type="tel" placeholder="+919812199887" class="field" required>
+      <input type="tel" placeholder="+919812199887" class="field" id="inputNumber" onchange="checkForMobileNumber()" required>
+      <p id="outputNumber" class="validationOutputs"></p>
       <br>
       <label>Query: </label>
       <textarea placeholder="Explain your issue"></textarea>
@@ -43,5 +46,6 @@
   </div>
   <script src="main.js"></script>
   <script src="women.js"></script>
+  <script src="contact.js"></script>
 </body>
 </html>

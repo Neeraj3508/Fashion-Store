@@ -71,7 +71,7 @@ ion-icon {
   margin-left:auto;
   margin-right: auto;
   background-color: rgba(255, 227, 217, 1.0);
-  height: 570px;  
+  height: 480px;  
 
   color:rgb(66, 64, 82);
   font-family:sans-serif;
@@ -120,4 +120,8 @@ ion-icon {
 @keyframes changeColor {
   from{background-color: rgb(66, 64, 82);color: rgba(255, 227, 217, 1.0);
   to{background-color:green;color:white;}}
+}
+.detailsValidation {
+  color: rgb(66, 64, 82);
+  padding-left: 20px;
 }

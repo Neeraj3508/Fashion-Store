@@ -5,9 +5,15 @@ function giveName() {
   localStorage.setItem("nameUser",x);
 }
 var text = "";
+var count = 1;
 function giveAddress(id) {
-
+  if(count < 4) {
   text += document.getElementById(id).value + "," ;
+  count++;
+  }
+  else{
+    text+= document.getElementById(id).value;
+  }
   localStorage.setItem("fullAdress",text);
 }
 
@@ -15,6 +21,24 @@ function getMobileNumber() {
   let x = document.getElementById('mainMobileNumber').value;
   localStorage.setItem("mainMobileNumber",x);
 }
+
+function checkForName() {
+  let x = document.getElementById('fname').value;
+  let patt = /^[a-zA-Z]+\s{1}[a-zA-Z]+$/;
+  if(x.match(patt))
+  document.getElementById('detailsOutputName').innerHTML = "Valid";
+  else
+  document.getElementById('detailsOutputName').innerHTML = "Not Valid";
+}
+function checkForMobileNumber() {
+  let x = document.getElementById('mainMobileNumber').value;
+  let patt = /^[0-9]{5}[-]*?[0-9]{5}/;
+  if(x.match(patt))
+  document.getElementById('detailsOutputNumber').innerHTML = "Valid";
+  else
+  document.getElementById('detailsOutputNumber').innerHTML = "Not Valid";
+}
+
 
 
 //Price and quantity

@@ -20,8 +20,9 @@
   <h1>Add Some Personal Details</h1>
   <div class="details-container" id="detailForm">
     <form action="pay.html">
-      <label class="field-label">Name</label>
-      <input type="text" class="fields" id="fname" onchange="javascript:giveName()" required>
+      <label class="field-label">Full Name</label>
+      <input type="text" class="fields" id="fname" onchange="javascript:giveName();checkForName()" required>
+      <span class="detailsValidation" id="detailsOutputName"></span>
       <br>
       <label class="field-label">House Number/Flat Number</label>
       <input type="text" maxlength="4" class="fields" id="houseNumber" onchange="javascript:giveAddress('houseNumber')" required>
@@ -36,10 +37,11 @@
       <input type="text" maxlength="6"  id="pinCode" onchange="javascript:giveAddress('pinCode')" class="fields" required>
       <br>
       <label class="field-label">Mobile Number</label>
-      <input type="tel" class="fields" id="mainMobileNumber" onchange="javascript:getMobileNumber()" required>
-      <br>
+      <input type="tel" class="fields" id="mainMobileNumber" onchange="javascript:getMobileNumber();checkForMobileNumber()" required>
+      <span class="detailsValidation" id="detailsOutputNumber"></span>
+      <!-- <br>
       <label class="field-label">Alternate Mobile Number(optional)</label>
-      <input type="tel" class="fields" optional>
+      <input type="tel" class="fields" optional> -->
       <br>
       <input type="submit" value="Proceed" id="proceed">
     </form>

@@ -175,3 +175,8 @@ h3 {
   from{background-color: rgb(66, 64, 82);color: rgba(255, 227, 217, 1.0);
   to{background-color:green;color:white;}}
 }
+.payValidation {
+  color:rgb(66, 64, 82);
+  padding-left: 20px;
+
+}

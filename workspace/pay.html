@@ -32,16 +32,19 @@
     <div class="form">
       <form action="orderReceipt.html">
         <label class="field-label">Card Number</label>
-        <input type="text" maxlength="16" class="fields" required>
+        <input type="text" maxlength="12" class="fields" id="creditNumberInput" onchange="checkForCreditNumber()" required>
+        <span class="payValidation" id="creditNumberOutput"></span>
         <br>
         <label class="field-label">Expiry Date Month/Year</label>
         <input type="month" class="fields" required>
         <br>
         <label class="field-label">Security Code</label>
-        <input type="text" maxlength="3" class="fields" required>
+        <input type="text" maxlength="3" class="fields" id="securityNumberInput" onchange="checkForSecurityNumber()" required>
+        <span class="payValidation" id="securityNumberOutput"></span>
         <br>
         <label class="field-label">Name of account holder</label>
-        <input type="text" class="fields" required>
+        <input type="text" class="fields" id="accountHolderInput" onchange="checkForAccountHolderName()" required>
+        <span class="payValidation" id="accountHolderOutput"></span>
         <br>
         <input type="checkbox" class="check" required>
         <label for="check" class="checkbox-text">I authorize recurring charges on my account</label>
@@ -55,5 +58,6 @@
   </div>
   <script src="main.js"></script>
   <script src="women.js"></script>
+  <script src="pay.js"></script>
 </body>
 </html>

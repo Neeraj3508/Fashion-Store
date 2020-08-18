@@ -128,3 +128,8 @@ textarea {
   font-size: 20px;
   height: 300px; 
 }
+.validationOutputs {
+  color:rgb(66, 64, 82);
+  padding-left:10px ;
+  font-size:20px;
+}
