@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+:root {
+  --themeColor : rgba(255, 227, 217, 1.0)
+}
+::-webkit-scrollbar {
+  background-color: white;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--themeColor);
+  border-radius: 2rem;
+}
+html {
+    scroll-behavior:smooth;
+  }
+  body {
+    font-family: 'Poppins', sans-serif;
+  
+  }
+  .bg-custom-color {
+    background-color : var(--themeColor);
+  }
