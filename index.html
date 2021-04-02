@@ -37,7 +37,7 @@
                     <a class="nav-link" aria-current="page" href="./html/contact.html">Contact</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="./html/cart.html"><i class="fa fa-cart-plus" aria-hidden="true"></i><span>0</span></a>
+                    <a class="nav-link" aria-current="page" href="./html/cart.html"><i class="fa fa-cart-plus" aria-hidden="true"></i><span id="cart-value">0</span></a>
                   </li>
               </ul>
           </div>
@@ -165,7 +165,9 @@
     ></script> 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="./js/newWomen.js"></script>
-
+  <script>
+    document.getElementById("cart-value").innerHTML = localStorage.getItem("numberOfItemsCart");
+  </script>
     
   </body>
   </html>

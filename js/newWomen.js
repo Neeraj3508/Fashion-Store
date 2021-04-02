@@ -1,4 +1,10 @@
-let numberOfItemsCart = 0;
+if(getItemFromLocalStorage("numberOfItemsCart") === null) {
+  var numberOfItemsCart = 0;
+}
+else {
+  var numberOfItemsCart = JSON.parse(getItemFromLocalStorage("numberOfItemsCart"));
+}
+
 if(getItemFromLocalStorage("products") === null) {
   var products = {};
 }
@@ -20,6 +26,7 @@ function makingProductObject(productName, productPrice) {
 }
 
 $(".card-women").click((event) => {
+  $("#cart-value").html(localStorage.getItem("numberOfItemsCart"));
   let parentElement = $(`#${event.target.id}`).parent();
   let productPrice = parentElement.children(".card-text").text();
   let productName = parentElement.children(".card-title").text();
