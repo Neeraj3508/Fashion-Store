@@ -1,5 +1,7 @@
-if(getItemFromLocalStorage("numberOfItemsCart") === null) {
+if(getItemFromLocalStorage("numberOfItemsCart") == null) {
+  console.log("value null")
   var numberOfItemsCart = 0;
+  setItemInLocalStorage("numberOfItemsCart", numberOfItemsCart);
 }
 else {
   var numberOfItemsCart = JSON.parse(getItemFromLocalStorage("numberOfItemsCart"));
@@ -25,12 +27,14 @@ function makingProductObject(productName, productPrice) {
   }
 }
 
-$(".card-women").click((event) => {
-  $("#cart-value").html(localStorage.getItem("numberOfItemsCart"));
+$(".add-cart").click((event) => {
+  event.preventDefault();
+  console.log("here")
   let parentElement = $(`#${event.target.id}`).parent();
   let productPrice = parentElement.children(".card-text").text();
   let productName = parentElement.children(".card-title").text();
   numberOfItemsCart = incrementItemsInCart(numberOfItemsCart);
+  $("#cart-value").html(`${parseInt(localStorage.getItem("numberOfItemsCart")) + 1}`);
   makingProductObject(productName, productPrice);
   setItemInLocalStorage("products", JSON.stringify(products));
   setItemInLocalStorage("numberOfItemsCart", JSON.stringify(numberOfItemsCart));
