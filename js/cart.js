@@ -52,6 +52,7 @@ function addEventListener() {
     let itemsToBeDeletedFromCart = productDetailsArray[indexOfItemRemoved].quantity;
     setItemInLocalStorage("numberOfItemsCart", totalItemsInCart - itemsToBeDeletedFromCart)
     $("tr").remove(".product-details");
+    $("#cart-value").html(localStorage.getItem("numberOfItemsCart"))
     fillTable();
     addEventListener();
     //   console.log(productsObject)
