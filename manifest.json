@@ -19,6 +19,6 @@
       }
   ],
   "theme_color": "rgba(255, 227, 217, 1.0)",
-  "start_url": "/Fashion-Store",
-  "display": "standalone"
+  "start_url": "/?home=true",
+  "display": "fullscreen"
 }
