@@ -3,7 +3,6 @@
   "short_name": "Fashion Store",
   "name": "Fashion Store",
   "description": "One Store for all your clothing needs",
-  "scope": "/",
   "icons": [
     {
         "src": "icons/manifest-icon-192.png",
