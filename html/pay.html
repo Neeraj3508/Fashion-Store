@@ -1,67 +1,3 @@
-<!-- <!DOCTYPE html>
-<html-- lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Checkout | Fashion Store</title>
-  <link rel="stylesheet" href="../css/pay.css">
-  <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
-</head>
-<body>
-
-  <ul class="nav-bar">
-    <li><b><a href="./index.html">Fashion</a></b></li> 
-    <li><a href="./cart.html" class="cart"><ion-icon name="cart-outline"></ion-icon><span>0</span></a></li> 
-    <li><a href="./contact.html">Contact</a></li>
-    <li><a href="./team.html">Team</a></li>
-    <li><a href="./products.html">Products</a></li>
-    <li><a href="../index.html">Home</a></li>   
-  </ul>
-
-  <h1>Checkout</h1>
-  <div class="svg">
-    <img src="../images/undraw_pay_online_b1hk.svg" width="100%" height="500px">
-  </div>
-  <div class="details-container">
-    <div class="image-container">
-      <img src="../images/mastercard.png" alt="visa-mastercard">
-    </div>
-    <div class="heading-container">
-      <h3>MasterCard/Visa</h3>
-    </div>
-    <div class="form">
-      <form action="orderReceipt.html">
-        <label class="form-label">Card Number</label>
-        <input type="text" maxlength="12" class="form-control" id="creditNumberInput" onchange="checkForCreditNumber()" required>
-        <span class="payValidation" id="creditNumberOutput"></span>
-        <br>
-        <label class="form-label">Expiry Date Month/Year</label>
-        <input type="month" class="form-control" required>
-        <br>
-        <label class="form-label">Security Code</label>
-        <input type="text" maxlength="3" class="form-control" id="securityNumberInput" onchange="checkForSecurityNumber()" required>
-        <span class="payValidation" id="securityNumberOutput"></span>
-        <br>
-        <label class="form-label">Name of account holder</label>
-        <input type="text" class="form-control" id="accountHolderInput" onchange="checkForAccountHolderName()" required>
-        <span class="payValidation" id="accountHolderOutput"></span>
-        <br>
-        <input type="checkbox" class="form-check-input" required>
-        <label for="form-check-input" class="form-check-label">I authorize recurring charges on my account</label>
-        <br>
-        <input type="checkbox" class="form-check-input" required>
-        <label for="form-check-input" class="form-check-label">Register this account for next purchase</label>
-        <br>
-        <input type="submit" value="Pay" id="pay">
-      </form>
-    </div>
-  </div>
-  <script src="../js/main.js"></script>
-  <script src="../js/women.js"></script>
-  <script src="../js/pay.js"></script>
-</body>
-</html-->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -76,6 +12,13 @@
   />
   <script src="https://kit.fontawesome.com/dabf4ff9a0.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="../css/style.css">
+  <meta name="title" content="Fashion Store">
+    <meta name="description" content="This app is one stop for all your clothing needs">
+    <meta name="keywords" content="clothing, shopping, fashion">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
+    <meta name="author" content="Neeraj Gupta">
 </head>
 <body>
   <nav class="navbar navbar-expand-sm navbar-light bg-custom-color">
@@ -144,5 +87,6 @@
     <script>
       document.getElementById("cart-value").innerHTML = localStorage.getItem("numberOfItemsCart");
     </script>
+    <script src="../registerSW.js"></script>
 </body>
 </html>
